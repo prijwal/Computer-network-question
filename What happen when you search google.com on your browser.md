@@ -20,7 +20,7 @@ So the next step is to decide which protocol is to be use, HTTP or HTTPS ?
 
 ## Protocol deciding
 
-If we do not mention the protocol the browser its preloaded HSTS ( HTTP strict transport security ) list. 
+If we do not mention the protocol then the browser check in its preloaded HSTS ( HTTP strict transport security ) list. 
 If searched website is in the list then browser use HTTPS ( port no. 443 ) protocol else it will use HTTP ( port no. 80 ).
 
 Now we know that 
