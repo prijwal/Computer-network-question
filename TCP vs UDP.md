@@ -8,5 +8,4 @@ TCP is slower | UDP is faster, simpler, and more efficient than TCP
 TCP provides flow control and acknowledgement of data | UDP is efficient for broadcast and multicast type of network transmission
 Order/ sequence of data is preserved is TCP | There is no sequencing of data in UDP
 TCP can be used to sending mail | UDP can be used to stream video
-
-* 
+TCP is used by HTTP, HTTPs, FTP, SMTP and Telnet | UDP is used by DNS, DHCP, TFTP, SNMP, RIP, and VoIP
