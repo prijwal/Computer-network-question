@@ -31,7 +31,7 @@ Protocol | HTTPS
 Port | 443
 Ip | ?
 
-For IP address, we need to Look up upon DNS ( Domain name server )
+For IP address, we need to Look up on DNS ( Domain name server )
 
 ## DNS loop up 
 
