@@ -35,23 +35,25 @@ For IP address, we need to Look up on DNS ( Domain name server )
 
 ## DNS loop up 
 
-The first server to which our query interacts with is the **DNS resolver or recursive resolver** which can be operated by our ISP (Internet Service Provider) or a third party provider.
+The first server to which our query interacts with is the **DNS resolver or recursive resolver** which can be operated by our ISP (Internet Service Provider) or by a third party
+.
 
 If website is found is cache memory of DNS resolver then ok , else  
 
-* The first type of DNS server to which recursive resolver talks to is the root server. 
+* Now the recursive resolver ask to DNS root server about the URL. 
 
-  * There are 13 root servers are running all over the world ( A - M ) and each one knows DNS information about TLD (top-level domain) and root server 
-  will give the IP adress of corresponding TLD to recursive resolver. 
+  * There are 13 root servers are running all over the world ( A - M ) and each one knows DNS information about TLD (top-level domain) so now the ,
+  * Root server will give the IP adress of corresponding TLD to recursive resolver. 
 
 * TLD refers to the last part of a domain name. For example( .com is TLD in google.com). 
    * Some other examples of TLD are .com for Commercial businesses, .gov for government, .edu for Educational purpose, .org for non-profit Organizations, .mil for 
    Military purpose, .net for Network organizations, and Country code TLDs represent specific geographic locations. For example: .in represents India.
    
-* Now the TLD server for the ‘.com’ will respond and it will return the IP adress of nameserver with the records of ‘google.’ portion of the domain name in Authorative server to recursive reslver.
-* The authoritative name server is the final stop for a DNS query and return the IP adress of google to recursive resolver. 
+* Now the TLD server for the ‘.com’ will respond.
+* It will return the IP adress of **"google"** portion in Authorative server to recursive reslver.
+* The authoritative name server is the final stop for a DNS query and return the IP adress of google.com to recursive resolver. 
 * Recursive resolver give it back to our browser and then our browser connect to the servers of IP address it received.  
 
     
-All this process take place in 10th of second. ( Amazing right ? ) 
+All this process take place in 10th of a second. ( Amazing right ? ) 
 
